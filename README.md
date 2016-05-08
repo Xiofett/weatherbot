@@ -50,3 +50,5 @@ token_key = Access Token Secret
 That's it. Run the python script and check the resulting tweet. (You can comment out the api.statuses.update line and add a print statement if you want to see what the tweet will look like before engaging twitterland)
 
 The Darksky API provides a lot more data that we're displaying here. If you want to make this bot your own (and you should), read through the docs and play around with the output.
+
+Make the script executable and it's ready to be added to your cron. I run mine every 4 hours, but you can run it however many times you want. You should probably try to keep it below 1000 a month, otherwise you'll likely get your Twitter account banned and a bill from Darksky...
