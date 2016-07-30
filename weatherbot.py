@@ -29,10 +29,10 @@ existalert = alertcast.alerts()
 if existalert == []:
      ca = "No current alerts"
 else:
-     ca = "http://bit.ly/2aoo0rb"
+     ca = "https://alerts.weather.gov/cap/ar.php?x=1%0A"
 
 
-tweetStr = "Current conditions: %s  %dF.\nToday's forecast: %s  High: %dF.\nAlerts: %s" % (currstat, currtemp, df, hitemp, ca)
+tweetStr = "Current conditions: %s  %dF.\nToday: %s  High: %dF.\nAlerts: %s" % (currstat, currtemp, df, hitemp, ca)
 
 con_secret = 'Your Consumer Key (API Key)'
 con_secret_key = 'Your Consumer Secret (API Secret)'
