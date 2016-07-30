@@ -47,6 +47,9 @@ token = Access Token
 token_key = Access Token Secret
 ```
 
+Also, I cannot figure out how to get the alert URI from the data to include it in the tweet, so my workaround is to hardcode a link to the NOAA alert page for my state (Arkansas) if an alert exists. You'll need to head out to the https://alerts.weather.gov site, find your URL and make the change yourself.
+
+
 That's it. Run the python script and check the resulting tweet. (You can comment out the api.statuses.update line and add a print statement if you want to see what the tweet will look like before engaging twitterland)
 
 The Darksky API provides a lot more data that we're displaying here. If you want to make this bot your own (and you should), read through the docs and play around with the output.
