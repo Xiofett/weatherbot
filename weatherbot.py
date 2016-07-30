@@ -23,12 +23,14 @@ cd = forecast.daily()
 for hourlyData in cd.data:
      hitemp = hourlyData.temperatureMax
 
-existalert = forecast.alerts()
+alertcast = forecastio.load_forecast(api_key, lat, lng)
+existalert = alertcast.alerts()
 
 if existalert == []:
      ca = "No current alerts"
 else:
-     ca = existalert
+     ca = "http://bit.ly/2aoo0rb"
+
 
 tweetStr = "Current conditions: %s  %dF.\nToday's forecast: %s  High: %dF.\nAlerts: %s" % (currstat, currtemp, df, hitemp, ca)
 
